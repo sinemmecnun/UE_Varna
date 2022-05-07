@@ -1,0 +1,12 @@
+C:\Users\Sinem\source\repos\kursova120029\bin\Debug\kursova120029.exe.config
+C:\Users\Sinem\source\repos\kursova120029\bin\Debug\kursova120029.exe
+C:\Users\Sinem\source\repos\kursova120029\bin\Debug\kursova120029.pdb
+C:\Users\Sinem\source\repos\kursova120029\obj\Debug\kursova120029.csproj.AssemblyReference.cache
+C:\Users\Sinem\source\repos\kursova120029\obj\Debug\kursova120029.csproj.SuggestedBindingRedirects.cache
+C:\Users\Sinem\source\repos\kursova120029\obj\Debug\kursova120029.Form1.resources
+C:\Users\Sinem\source\repos\kursova120029\obj\Debug\kursova120029.klient.resources
+C:\Users\Sinem\source\repos\kursova120029\obj\Debug\kursova120029.Properties.Resources.resources
+C:\Users\Sinem\source\repos\kursova120029\obj\Debug\kursova120029.csproj.GenerateResource.cache
+C:\Users\Sinem\source\repos\kursova120029\obj\Debug\kursova120029.csproj.CoreCompileInputs.cache
+C:\Users\Sinem\source\repos\kursova120029\obj\Debug\kursova120029.exe
+C:\Users\Sinem\source\repos\kursova120029\obj\Debug\kursova120029.pdb
