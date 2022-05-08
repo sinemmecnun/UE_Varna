@@ -150,6 +150,7 @@ namespace kursova120029
             this.button1.TabIndex = 11;
             this.button1.Text = "ОК";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // menuStrip1
             // 
@@ -173,8 +174,9 @@ namespace kursova120029
             // пресметниToolStripMenuItem
             // 
             this.пресметниToolStripMenuItem.Name = "пресметниToolStripMenuItem";
-            this.пресметниToolStripMenuItem.Size = new System.Drawing.Size(101, 26);
+            this.пресметниToolStripMenuItem.Size = new System.Drawing.Size(101, 24);
             this.пресметниToolStripMenuItem.Text = "Пресметни";
+            this.пресметниToolStripMenuItem.Click += new System.EventHandler(this.пресметниToolStripMenuItem_Click);
             // 
             // Form1
             // 

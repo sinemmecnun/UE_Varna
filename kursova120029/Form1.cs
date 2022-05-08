@@ -27,6 +27,19 @@ namespace kursova120029
         //    {"с карта за месец", 2},
         //    {"с карта за брой посещения", 3 }
         //};
+
+        private void търсиToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new klient().ShowDialog();
+            Close();
+        }
+
+        private void пресметниToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Calculate().ShowDialog();
+            Close();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             int nomer = int.Parse(textBox1.Text);
@@ -40,15 +53,14 @@ namespace kursova120029
 
             //if (!File.Exists(FileName))
             //{
-            //    FileStream file = new FileStream(FileName, FileMode.CreateNew);
+            //    FileStream fileKlienti = new FileStream(FileName, FileMode.CreateNew);
             //}
-            // zapis vuv fayl
-            new klient().ShowDialog();
-            Close();
-        }
+            //else
+            //{
+            //    FileStream fileKlienti = new FileStream(FileName, FileMode.Open);
+            //}
 
-        private void търсиToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+            // zapis vuv fayl
             new klient().ShowDialog();
             Close();
         }
