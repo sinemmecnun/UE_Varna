@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,23 +7,53 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Collections;
 
 namespace kursova120029
 {
-    public partial class klient : Form
+    public partial class Klient : Form
     {
-        public klient()
+        public Klient()
         {
             InitializeComponent();
         }
+
         ArrayList klienti = new ArrayList();
-        private void button2_Click(object sender, EventArgs e)
+        string FileName = "klienti.dat";
+        private void Klient_Load(object sender, EventArgs e)
+        {
+            FileStream fileKlienti = new FileStream(FileName, FileMode.OpenOrCreate);
+            BinaryReader br = new BinaryReader(fileKlienti);
+            int number = -1;
+            string name = string.Empty;
+            while (fileKlienti.Position < fileKlienti.Length)
+            {
+                number = br.ReadInt32();
+                name = br.ReadString();
+                string type = br.ReadString();
+                int duration = br.ReadInt32();
+                FitnesClient klient = new FitnesClient(number, name, type, duration);
+                klienti.Add(klient);
+            }
+            fileKlienti.Close();
+            if (number != -1)
+            {
+                textBox1.Text = number.ToString();
+            }
+            if (name != string.Empty)
+            {
+                textBox2.Text = name;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             new Form1().ShowDialog();
             Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             int nomer = int.Parse(textBox1.Text);
             string ime = textBox2.Text;
@@ -37,8 +66,7 @@ namespace kursova120029
                     dataGridView1.Rows.Add(klient.nomerKlient, klient.imeKlient, klient.tipKlient, klient.duration);
                 }
             }
-            listBox3.Items.Add(totalDuration);
+            label1.Text = totalDuration.ToString();
         }
-
     }
 }
