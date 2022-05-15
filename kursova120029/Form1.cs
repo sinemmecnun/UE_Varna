@@ -20,22 +20,11 @@ namespace kursova120029
         }
 
         string FileName = "klienti.dat";
-        //Dictionary<string, int> tipKlient = new Dictionary<string, int>()
-        //{
-        //    {"без карта", 1},
-        //    {"с карта за месец", 2},
-        //    {"с карта за брой посещения", 3 }
-        //};
-
+        
         private void търсиToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //opens a new dialog window where you can search by name and client number
             new Klient().ShowDialog();
-            Close();
-        }
-
-        private void пресметниToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new Calculate().ShowDialog();
             Close();
         }
 
@@ -45,22 +34,30 @@ namespace kursova120029
             int nomer = int.Parse(textBox1.Text);
             string ime = textBox2.Text;
             string tip = comboBox1.SelectedItem.ToString();
-            // add datetime !!
+            // datetimepicker not incorporated
             int duration = int.Parse(textBox3.Text);
 
             // save in a file
-            //deletes everything
             FileStream fileKlienti = new FileStream(FileName, FileMode.OpenOrCreate);
+            fileKlienti.Seek(0, SeekOrigin.End);
             BinaryWriter bw = new BinaryWriter(fileKlienti);
             bw.Write(nomer);
             bw.Write(ime);
             bw.Write(tip);
             bw.Write(duration);
             fileKlienti.Close();
-            MessageBox.Show("Данните бяха записани успешно.");
- 
-            new Klient().ShowDialog();
-            Close();
+            MessageBox.Show("Данните бяха записани успешно."); 
+
+            //clears the form
+            textBox1.Text = String.Empty;
+            textBox2.Text = String.Empty;
+            textBox3.Text = String.Empty;
+            comboBox1.Text = String.Empty;
+        }
+
+        private void пресметниToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new Calculate().ShowDialog();
         }
     }
 }

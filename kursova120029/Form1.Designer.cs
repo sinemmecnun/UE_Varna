@@ -148,7 +148,7 @@ namespace kursova120029
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(141, 38);
             this.button1.TabIndex = 11;
-            this.button1.Text = "ОК";
+            this.button1.Text = "Добави";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -167,8 +167,8 @@ namespace kursova120029
             // търсиToolStripMenuItem
             // 
             this.търсиToolStripMenuItem.Name = "търсиToolStripMenuItem";
-            this.търсиToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
-            this.търсиToolStripMenuItem.Text = "Търси";
+            this.търсиToolStripMenuItem.Size = new System.Drawing.Size(116, 24);
+            this.търсиToolStripMenuItem.Text = "Търси клиент";
             this.търсиToolStripMenuItem.Click += new System.EventHandler(this.търсиToolStripMenuItem_Click);
             // 
             // пресметниToolStripMenuItem

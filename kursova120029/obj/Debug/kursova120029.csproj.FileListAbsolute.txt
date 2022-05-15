@@ -22,3 +22,4 @@ C:\Users\Sinem\OneDrive - ue-varna.bg\Desktop\uni\UE_Varna_Github\UE_Varna\kurso
 C:\Users\Sinem\OneDrive - ue-varna.bg\Desktop\uni\UE_Varna_Github\UE_Varna\kursova120029\obj\Debug\kursova120029.csproj.CoreCompileInputs.cache
 C:\Users\Sinem\OneDrive - ue-varna.bg\Desktop\uni\UE_Varna_Github\UE_Varna\kursova120029\obj\Debug\kursova120029.exe
 C:\Users\Sinem\OneDrive - ue-varna.bg\Desktop\uni\UE_Varna_Github\UE_Varna\kursova120029\obj\Debug\kursova120029.pdb
+C:\Users\Sinem\OneDrive - ue-varna.bg\Desktop\uni\UE_Varna_Github\UE_Varna\kursova120029\obj\Debug\kursova120029.Calculate.resources
