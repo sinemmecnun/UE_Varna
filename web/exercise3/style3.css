@@ -1,0 +1,22 @@
+div {
+    display: inline-block;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3px;
+}
+
+square {
+    width: 5rem;
+    height: 5rem;
+    border: 5px solid red;
+    line-height: 5rem;
+}
+
+.x{
+    background-color: orange;
+}
+
+.o {
+    background-color: #333;
+}

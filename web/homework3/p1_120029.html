@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Регистрация</h1>
+    <form action="https://ue-varna.bg/bg/">
+        <i class="fa-solid fa-frog"></i>
+        <section>
+            <label for="email">Имейл</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Въведете имейл">
+        </section>
+        <section>
+            <label for="confirmEmail">Потвърдете Имейл</label>
+            <br>
+            <input type="email" name="confirmEmail" id="confirmEmail" placeholder="Потвърдете имейл">
+        </section>
+        <section>
+            <label for="password">Парола</label>
+            <br>
+            <input type="password" name="password" id="password" placeholder="Въведете парола">
+        </section>
+        <section>
+            <label for="confirmPassword">Потвърдете парола</label>
+            <br>
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Потвърдете парола">
+        </section>
+        <section>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label id="checkboxLabel" for="checkbox">Съгласявам с
+                <a href="#">общите условия</a> за ползване на <br>
+                <span>Frog Economics</span></label>
+        </section>
+        <button>Регистрирай се</button>
+    </form>
+</body>
+
+</html>

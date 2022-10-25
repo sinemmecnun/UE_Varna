@@ -1,0 +1,27 @@
+body{
+    height: 240px;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: darkslateblue;
+    display: inline-block;
+}
+
+section {
+    position: relative;
+}
+
+div:nth-of-type(2) {
+    background-color: orange;
+    position: relative;
+    bottom: -50px;
+    z-index: 0;
+}
+
+div:nth-of-type(2){
+    background-color: orange;
+    z-index: 0;
+    position: absolute;
+}

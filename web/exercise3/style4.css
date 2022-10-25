@@ -1,0 +1,41 @@
+:root{
+    font-size: 16px;
+}
+
+section{
+    background-color: orange;
+    width: 20rem;
+    height: 15rem;
+    border-radius: 4rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0.5rem;
+}
+
+div{
+    width: 10rem;
+    height: 3rem;
+    color: darkcyan;
+    padding: 0.3rem;
+    background-color: bisque;
+    border-radius: 5px;
+}
+
+#html{
+    border: 4px ridge green;
+    border-left: 6px ridge green;
+}
+
+#css{
+    align-self: center;
+    border: 4px dotted darkcyan;
+}
+
+#js{
+    align-self: flex-end;
+    border: 4px dashed darkcyan;
+    border-left: 6px dashed darkcyan;
+}
