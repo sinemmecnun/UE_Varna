@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: inherit;
+    height: 10%;
+    padding: 18px 20px;
+    background-color: white;
+}
+
+#logo{
+    padding: 0 30px;
+}
+#help{
+    padding: 0 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#help a{
+    text-align: center;
+    color: blue;
+    text-decoration: none;
+}
+
+body{
+    background-color: #f5f5f4;
+    font-family: 'Raleway', sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: unset;
+    position: fixed;
+    bottom: 0;
+    height: 90%;
+    padding-top: 20px;
+    padding-left: 0;
+
+}
+
+#login-field{
+    background-color: white;
+    display: block;
+    width: 80%;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-around;
+    padding-left: 30px;
+    text-align: center;
+}
+
+#login-field div, form, button{
+    padding: 10px;
+}
+
+#login{
+    display: block;  
+}
+
+#login-logo{
+    justify-content: center;
+}
+
+#loginbox{
+    width: 40%;
+    padding-bottom: 20px;
+}
+
+#text{
+    padding-top: 50px;
+    padding-left: 70px;
+    text-align: left;
+}
+
+#text p{
+    padding-bottom: 10px;
+    font-size: 25px;
+}
+
+#textbox{
+    width: 60%;
+    padding-left: 65px;
+    padding-top: 30px;
+    padding-right: 20px;
+}

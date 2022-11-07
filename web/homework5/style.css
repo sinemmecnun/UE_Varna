@@ -1,0 +1,17 @@
+.firstli{
+    background-color: lightpink;
+}
+
+.ol{
+    vertical-align: middle;
+}
+
+#first{
+    background-color: coral;
+    height: 80px;
+}
+
+#second{
+    background-color: #007FFF;
+    height: 80px;
+}
